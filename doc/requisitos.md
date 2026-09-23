@@ -1,87 +1,53 @@
-
-# Requisitos do Projeto
-
+# Requisitos 
 ## 1. Descrição do problema
 
-Pessoas neurodivergentes podem encontrar dificuldades durante o processo de aprendizagem quando os conteúdos, atividades e recursos não estão adaptados às suas necessidades. Professores e responsáveis também podem ter dificuldade para acompanhar o progresso do aluno e encontrar recursos adequados.
+Estudantes precisam organizar matérias, tarefas e prazos de diferentes disciplinas. Quando essas informações ficam espalhadas em cadernos, mensagens e diferentes aplicativos, pode ser difícil saber o que precisa ser feito e acompanhar o próprio progresso.
 
-O projeto propõe uma plataforma de apoio à aprendizagem que reúne conteúdos, aulas, atividades, jogos, materiais e recursos de acessibilidade em um único ambiente.
+O projeto propõe um sistema simples de organização de estudos que permite ao estudante cadastrar suas tarefas, associá-las a matérias, definir prazos e acompanhar tarefas pendentes, concluídas e seu progresso.
 
 ## 2. Público-alvo
 
-- **Aluno:** pessoa neurodivergente que utiliza a plataforma para estudar, realizar atividades e acompanhar seu progresso.
-- **Professor:** profissional que acompanha alunos, disponibiliza conteúdos e atividades e consulta o progresso.
-- **Responsável:** pessoa responsável pelo acompanhamento do aluno e que pode consultar informações de progresso e feedbacks.
+O sistema será utilizado principalmente por estudantes que precisam organizar suas atividades acadêmicas e acompanhar seus prazos.
 
-## 3. Objetivo geral
+### Usuário principal
+- Estudante.
 
-Oferecer um ambiente digital organizado e acessível para apoiar o processo de aprendizagem, permitindo que alunos utilizem conteúdos e atividades adequados às suas necessidades e que professores e responsáveis acompanhem sua evolução.
-
-## 4. Requisitos funcionais
+## 3. Requisitos funcionais
 
 | ID | Requisito |
 |---|---|
-| RF01 | O sistema deve permitir o cadastro e acesso do usuário por meio de login. |
-| RF02 | O sistema deve permitir identificar o perfil de acesso do usuário. |
-| RF03 | O sistema deve permitir ao aluno visualizar disciplinas e conteúdos disponíveis. |
-| RF04 | O sistema deve permitir ao aluno acessar aulas e materiais de apoio. |
-| RF05 | O sistema deve permitir ao aluno realizar atividades e responder questões. |
-| RF06 | O sistema deve permitir ao aluno acessar jogos educacionais. |
-| RF07 | O sistema deve registrar respostas e resultados das atividades. |
-| RF08 | O sistema deve registrar o progresso do aluno. |
-| RF09 | O sistema deve disponibilizar recursos de acessibilidade e configuração de preferências. |
-| RF10 | O sistema deve permitir ao professor disponibilizar conteúdos e atividades. |
-| RF11 | O sistema deve permitir ao professor consultar o progresso dos alunos acompanhados. |
-| RF12 | O sistema deve permitir ao responsável consultar informações de progresso do aluno vinculado. |
-| RF13 | O sistema deve permitir o envio e visualização de feedbacks. |
-| RF14 | O sistema deve apresentar notificações relevantes ao usuário. |
-| RF15 | O sistema deve permitir iniciar e registrar partidas de jogos educacionais. |
+| RF01 | O sistema deve permitir que o estudante faça login. |
+| RF02 | O sistema deve exibir um dashboard após o login. |
+| RF03 | O sistema deve permitir visualizar as matérias cadastradas. |
+| RF04 | O sistema deve permitir visualizar as tarefas pendentes. |
+| RF05 | O sistema deve permitir visualizar as tarefas concluídas. |
+| RF06 | O sistema deve permitir cadastrar uma nova tarefa. |
+| RF07 | O sistema deve solicitar nome, matéria e prazo ao cadastrar uma tarefa. |
+| RF08 | O sistema deve salvar a tarefa cadastrada. |
+| RF09 | O sistema deve permitir marcar uma tarefa como concluída. |
+| RF10 | O sistema deve apresentar informações de progresso do estudante. |
 
-## 5. Requisitos não funcionais
+## 4. Requisitos não funcionais
 
 | ID | Requisito |
 |---|---|
-| RNF01 | A interface deve utilizar linguagem simples e objetiva. |
-| RNF02 | O sistema deve possuir interface responsiva para diferentes tamanhos de tela. |
-| RNF03 | A interface deve considerar princípios de acessibilidade visual e de navegação. |
-| RNF04 | As informações dos usuários devem ser protegidas contra acesso não autorizado. |
-| RNF05 | O sistema deve apresentar feedback visual após ações importantes, como conclusão de atividades. |
-| RNF06 | O sistema deve manter consistência visual entre as telas. |
-| RNF07 | As telas devem evitar excesso de informações simultâneas, facilitando a compreensão do usuário. |
-| RNF08 | O sistema deve permitir evolução futura para inclusão de novos conteúdos, atividades e jogos. |
+| RNF01 | O sistema deve possuir uma interface simples e fácil de entender. |
+| RNF02 | O sistema deve apresentar as informações de forma organizada. |
+| RNF03 | O sistema deve possuir navegação consistente entre as telas. |
+| RNF04 | O sistema deve validar os campos obrigatórios antes de salvar uma tarefa. |
+| RNF05 | O sistema deve apresentar mensagens claras quando uma operação for realizada ou quando houver erro. |
+| RNF06 | O sistema deve ser responsivo para diferentes tamanhos de tela. |
 
-## 6. Fluxo principal do aluno
+## 5. Fluxo principal
 
-1. O usuário acessa a plataforma.
-2. Realiza login.
-3. O sistema identifica o perfil do usuário.
-4. O aluno acessa a tela inicial.
-5. O aluno escolhe uma disciplina.
-6. Visualiza os conteúdos disponíveis.
-7. Escolhe uma aula, material ou atividade.
-8. Realiza a atividade.
-9. O sistema registra as respostas e o resultado.
-10. O progresso do aluno é atualizado.
-11. O aluno pode retornar à tela inicial, acessar outro conteúdo ou consultar seu progresso.
-
-## 7. Telas principais do protótipo
-
-- Login
-- Tela inicial / Dashboard do aluno
-- Disciplinas
-- Conteúdo / Aula
-- Atividade / Questões
-- Resultado da atividade
-- Jogos
-- Progresso
-- Configurações e acessibilidade
-
-## 8. Critérios de aceitação iniciais
-
-- O usuário consegue entrar no sistema pelo login.
-- O aluno consegue visualizar suas disciplinas.
-- O aluno consegue abrir um conteúdo.
-- O aluno consegue iniciar e concluir uma atividade.
-- O sistema apresenta o resultado da atividade.
-- O progresso é apresentado ao aluno.
-- O usuário consegue acessar configurações de acessibilidade.
+1. O estudante acessa o sistema.
+2. O estudante informa seus dados de login.
+3. O sistema valida o acesso.
+4. O sistema apresenta o Dashboard.
+5. O estudante visualiza matérias, tarefas pendentes, tarefas concluídas e progresso.
+6. O estudante seleciona a opção de adicionar tarefa.
+7. O sistema apresenta o formulário de cadastro.
+8. O estudante informa nome da tarefa, matéria e prazo.
+9. O sistema valida os dados.
+10. O sistema salva a tarefa.
+11. A tarefa passa a aparecer na lista de tarefas pendentes.
